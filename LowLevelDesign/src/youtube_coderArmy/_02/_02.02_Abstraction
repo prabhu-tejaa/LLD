@@ -1,0 +1,32 @@
+class_02.Abstraction:
+Lets take car and owner as a real world objects.
+
+Class Car {
+accelerate()
+brake()
+gearShift()
+}
+
+does user really need to know how the engine is working or how the gear box is working?
+No rite!!! There is no need to know all this information to drive a car.
+
+does user need to know how laptop or mobile is made, or how the hardware is working inside the machine to watch a youtube video??
+No rite!!!
+
+you will be provided an interface like screen/monitor to watch the video or to interact with the system. Same goes with car, you will be provided an interface to interact with the car like body, steering, gears, accelerator, clutch, etc..
+
+another example would be tv, does user really need to know how the internal working of tv is?? or how the brodactsing system works!
+No rite!!!
+
+you will be provided an interface here it is remote to access the feature you want without knowing the internal working of the object
+
+** class_02.Abstraction:
+class_02.Abstraction means hiding complex implementation details and showing only the essential features **
+
+Here client is someone who is using that specific object.
+
+For example:
+Object1 has driveCar(), onAc()
+
+Object2 doesn't need to know how driveCar() or OnAc() work, it can just use the interface of Object1 and use those method calls.
+This is abstraction

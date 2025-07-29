@@ -1,0 +1,41 @@
+OOPs - Object oriented program system
+
+OOPs basically is how real world works, make the same way work in virtual world.
+
+History of programming:
+First came machine language (010101),
+next, assembly language (MOV A, 61 H),
+next, Procedural programming (functions, loops, if else, switch (DO THIS THEN DO THIS (C language) not able to solve complex problems and also its not scalable
+next, Object ordinated programming () real world modeling, data security, highly scalable and reusable
+
+OOPs:
+
+In Real word we Interact with Objects. Now bring these same to the programming
+
+Object has 2 things:
+                    - Characterists (Unique identifier by which we can identify it (variables)
+                    - Behaviour (Methods, functions)
+
+Ex:
+Car:
+Characters - Engine, Brand, Model, Wheels,
+Behaviour - start(), stop(), gearShift(), accelerate(), break()
+
+
+Class Car {
+    String Engine;
+    int model;
+
+    start(){
+    //code
+    }
+}
+
+Class = Blueprint (Design)
+Object = Real Instance (with actual values)
+
+Pillars of OOPs:
+                - class_02.Abstraction
+                - Encapsulation
+                - Inheritance
+                - Polymorphism
