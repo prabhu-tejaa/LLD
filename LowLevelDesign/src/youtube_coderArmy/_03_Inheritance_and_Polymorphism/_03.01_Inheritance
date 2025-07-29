@@ -1,0 +1,68 @@
+Inheritance
+
+Parent
+  |
+Child
+relationship
+
+Imagine we have two different types of cars. Manual | Electric car
+if you see both Manual and Electric car are both Cars
+so in this case Car is a parent and Manual car | Electric car are its children
+
+            Car
+ Manual Car     Electric Car
+
+ class Car {
+ brand;
+ model;
+ isEngineOn;
+ currentSpeed;
+
+ startEngine();
+ stopEngine();
+ accelerate();
+ brake();
+ }
+
+ class ManualCar {
+ currentGear;
+
+ shiftGear();
+ }
+
+ class ElectricCar {
+ batteryPercentage;
+
+ chargeBattery();
+ }
+
+ if you see the above class of car, ManualCar and ElectricCar. Car class seems to have all the necessary characteristics and behaviours of a car. And ManualCar and ElectricCar classes have their own specific characteristics and behaviours.
+
+ we can inherit the parent class Car to get all the feature of Car. we use the keyword extends
+
+class ManualCar extends Car {
+ currentGear;
+ shiftGear();
+}
+
+class ElectricCar extends Car {
+ batteryPercentage;
+ chargeBattery();
+ }
+
+In main class:
+ManualCar myManualCar = new ManualCar("Suzuki", "WagonR");
+myManualCar.startEngine();
+myManualCar.shiftGear(1);
+
+ElectricCar myElectricCar = new ElectricCar("Tesla", "Model S");
+myElectricCar.chargeBattery();
+myElectricCar.startEngine();
+
+we can use like that in Inheritance...
+
+access modifier: Protected
+
+when we use Protected, it allows access in child classes
+
+most of the time we use private or public

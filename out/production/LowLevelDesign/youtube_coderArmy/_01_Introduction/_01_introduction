@@ -1,0 +1,26 @@
+what is LLD?
+
+LLD - Low Level Design
+
+LLD focuses on:
+                - Scalability
+                - Maintainability (old code should not be broken / easily debuggable)
+                - Reusability (should not be tightly coupled)
+
+What is not LLD?
+HLD: High Level Design
+        - Tech stack (Java / spring boot)
+        - Which Data base ( SQL / NOSQL)
+        - Server scaling
+        - Cost optimization
+
+HLD has almost no code in the interviews.
+
+HLD - LLD - DSA, using these 3 we make an application
+
+HLD focuses on System architecture
+LLD focuses on code structure
+DSA is to tool used by LLD to solve the problems
+
+** DSA is the brain of an application
+LLD is the skeleton **

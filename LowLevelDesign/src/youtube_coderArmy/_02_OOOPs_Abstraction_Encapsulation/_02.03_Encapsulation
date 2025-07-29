@@ -1,0 +1,39 @@
+Encapsulation means "its like a capsule" protected within
+
+((()))
+
+class Car {
+#variables
+#methods
+}
+| this is encapsulation
+
+encapsulation also focuses on data security
+
+class Car {
+odometer
+// odometer is something you cannot change
+speed
+// speed is also something you cannot change without the moment of any vehicle
+}
+
+nobody should not access or change these things outside
+
+here comes an concept called access modifiers...
+
+public private
+
+public variable - can you modified anywhere
+private variable - cannot be modified once declared
+
+Encapsulation - all the characters and behaviours should be encapsulated in a class and there should be data security.
+
+Ex:
+
+you can have your variables as private like
+
+private speed = 0
+
+but if you want to change the speed or the values you have to use getters and setters
+
+Encapsulation is all about data security.

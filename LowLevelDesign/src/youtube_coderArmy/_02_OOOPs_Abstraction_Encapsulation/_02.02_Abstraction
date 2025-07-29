@@ -30,3 +30,6 @@ Object1 has driveCar(), onAc()
 
 Object2 doesn't need to know how driveCar() or OnAc() work, it can just use the interface of Object1 and use those method calls.
 This is abstraction
+
+
+Abstraction is all about data hiding.
