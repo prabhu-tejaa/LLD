@@ -1,0 +1,31 @@
+Polymorphism
+
+Poly = many, Morphism = forms
+
+Polymorphism -  some objects have many forms
+
+    Animal (run())
+Duck    Human   Tiger
+run()   run()   run()
+
+There you can see in the example of run for an animal, there are many different ways of running but the action is same.
+
+There are 2 types of Polymorphism
+1. Dynamic Polymorphism
+2.Static Polymorphism
+
+1. Dynamic Polymorphism - Method overriding
+Its nothing but the same example above of the animal example, it has different forms but same action.
+
+2.Static Polymorphism - Method overloading
+ex:
+
+    Human (run())
+
+human runs in a different speed in different situations.
+Imagine a human is tired, he runs slow. Imagine another human who is active, he runs fast.
+Imagine if there is a tiger behind him, he runs in different speed.
+the concept here is that, we just had an behaviour to run but based on different different situations or parameter, there's a different way of result
+
+
+27:33
