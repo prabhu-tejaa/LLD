@@ -1,0 +1,129 @@
+Class Diagram:
+
+It shows how many classes are there in the application and how the classes are connected or associated with each other
+
+its all about:
+1. class structure
+2. association/connection between classes
+
+
+To represent a class we show it a rectangular diagram. Its broken down into 3 parts:
+
+1. className
+2. Characteristics / variables
+3. Behaviour / methods
+
+
+Associations:
+there are 2 types:
+1. class level association - Inheritance
+2. object level association - there are 3 types
+    - simple association
+    - Aggregation
+    - Composition
+All these 3 are all called Composition only.
+
+
+1. class level association - Inheritance
+
+Inheritance:
+
+Inheritance = is-a relationship
+
+ex:
+    Animal
+cow Tiger Human
+    - cow is a Animal
+    - Tiger is a Animal
+    - Human is a Animal
+
+    Car
+ManualCar   ElectricCar
+    - ManualCar is a Car
+    - ElectricCar is a Car
+
+class A {
+    method1();
+}
+
+class B extends A {
+    method2();
+}
+
+main() {
+    B bClass = new B();
+    bClass.method1();
+    bClass.method2();
+}
+
+It is represented using a filled arrow
+
+2. object level association - Composition
+
+Composition = has-a relationship
+
+    - simple association
+        weakest form of interaction between 2 classes
+
+        class Teja
+        class House
+
+        in real life we say Teja live in a house.
+        Teja has a house.
+
+    It is represented using an arrow
+
+    - Aggregation
+        this is a stronger relationship than simple association but still weaker
+
+    class Room
+    class Sofa
+    class chair
+    class Bed
+
+    if you see here, In Room, we have all other objects.
+    you can assume Aggregation is like there is one big object and inside that you have multiple many small objects which are related to the main object.
+
+    Each class can exist individually but when needed it can also be a part small objects within a main object.
+
+    It is represented using Diamond <>
+
+    - Composition
+        this is the strongest form of relationship between objects
+
+    class Chair
+    class Arms
+    class Seat
+    class Wheels
+
+    if you see here Arms, Seat and Wheels can't exist without Chair rite!
+    They can't exist independently Wheels, Arms, Seat.
+    Composition object is made up of many different objects.
+    Ex:
+     Chair
+     Wheels, Seat, Arms, ect...
+
+     it is represented with a filled diamond.
+
+     class A {
+        method1();
+     }
+
+     class B {
+        // reference of class A
+        private A a;
+            B(){
+                a = new A();
+            }
+
+            method2(){
+                a.method1();
+            }
+     }
+
+     main(){
+     B b = new B();
+     b.method2();
+     }
+
+     In LLD Composition is the most important concept which will be used. More than inheritance.
