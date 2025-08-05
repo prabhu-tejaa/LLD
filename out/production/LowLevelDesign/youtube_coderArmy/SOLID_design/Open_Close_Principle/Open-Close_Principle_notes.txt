@@ -1,0 +1,10 @@
+Open Close Principle:
+
+A class should be open for extension but closed for modification.
+
+Closed for modification: You should not change existing code when requirements change.
+
+Open for extension: You should be able to add new behavior by adding new code (like new classes or methods), not by changing old code.
+
+Existing code should remain untouched.
+New features or changes should be made by extending the code, not editing it.

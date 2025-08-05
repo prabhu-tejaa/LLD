@@ -1,0 +1,40 @@
+UML Diagrams:
+
+You have an idea in your mind and want to share the idea with your friend/stakeholders??
+
+There are 2 ways:
+1. Write in text format (this is boring)
+2. UML Diagram (in a diagrammatic way)
+
+Types of UML diagrams:
+1. Structural
+2. Behavioural
+
+1. Structural UML Diagrams (static diagram):
+Describe the structure of the application—what components (like classes, objects, modules) exist and how they are linked to each other.
+Also called static diagrams because they show how the system looks, not how it behaves.
+There are 7 types of diagram.
+
+Example: Class Diagram, Component Diagram, Deployment Diagram.
+The main diagram for interviews is class diagram.
+
+App: E-commerce Website
+Diagram shows:
+User, Product, Order classes
+Relationships like: A User places an Order for a Product
+📌 Shows what the system is made of
+
+2. Behavioural UML Diagrams:
+Show how components interact with each other and behave over time, usually based on OOP concepts like messages, states, and workflows.
+These diagrams focus on the dynamic behavior of the system.
+There are 7 types of diagram.
+
+Example: Use Case Diagram, Sequence Diagram, Activity Diagram, State Machine Diagram.
+The main diagram for interviews is Sequence diagram.
+
+App: E-commerce Website
+Diagram shows:
+A User logs in → browses products → adds to cart → makes payment
+📌 Shows how the system behaves during actions
+
+

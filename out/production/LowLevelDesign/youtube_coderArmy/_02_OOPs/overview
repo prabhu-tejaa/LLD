@@ -1,0 +1,76 @@
+1. Abstraction :-️
+Core Idea: Hiding complexity by showing only essential features. It focuses on what an object does, not how.
+It's achieved in two ways:
+abstract class: A blueprint for related classes ("is-a" relationship) that can share code.
+Keywords: abstract, extends.
+interface: A contract defining capabilities for any class ("can-do" relationship).
+Keywords: interface, implements.
+
+ex:
+// 1. Abstract class (What it IS)
+abstract class Vehicle {
+    abstract void move();
+}
+
+// 2. Interface (What it CAN DO)
+interface Drivable {
+    void drive();
+}
+
+// 3. The class USING both
+class Car extends Vehicle implements Drivable {
+    // You MUST provide a body for the abstract method from Vehicle
+    @Override
+    public void move() {
+        System.out.println("The car is moving on its wheels.");
+    }
+
+    // You MUST also provide a body for the method from Drivable
+    @Override
+    public void drive() {
+        System.out.println("Driving the car.");
+    }
+}
+
+// How to use it:
+Car myCar = new Car();
+myCar.move();  // Method from the abstract class
+myCar.drive(); // Method from the interface
+
+2. Encapsulation:-
+Using access modifiers (private, protected) to hide data and providing public methods to interact with that data.
+
+ex:
+class BankAccount {
+  private double balance; // Hidden data
+
+  public void deposit(double amount) { // Controlled public access
+    if (amount > 0) this.balance += amount;
+  }
+}
+
+3. Inheritance:-
+Using the extends keyword to make a child class acquire all the properties and methods from a parent class.
+
+ex:
+// A Car IS-A Vehicle and inherits its properties
+class Car extends Vehicle {
+  // Car automatically gets the 'move()' method
+}
+
+4. Polymorphism:-
+Dynamic Polymorphism (Runtime): The pattern is method overriding, where a subclass provides its own specific implementation of a method from its parent class. The @Override annotation is used.
+Static Polymorphism (Compile-time): The pattern is method overloading, where a class has multiple methods with the same name but different parameters.
+
+ex:
+// Dynamic (Overriding)
+class Dog extends Animal { void speak() { /* barks */ } }
+class Cat extends Animal { void speak() { /* meows */ } }
+// The 'speak()' method has different forms.
+
+// Static (Overloading)
+class Printer {
+  void print(String text) { /*...*/ }
+  void print(String text, int copies) { /*...*/ }
+}
+// The 'print()' name is used for different methods.

@@ -1,0 +1,95 @@
+Sequence diagram:
+
+Most of the time this is not asked in the interviews.
+
+but for certain cases we should know hoe sequence diagram works.
+
+sequence diagram is a type of behavioural digram, interaction between 2 classes (how and when)
+
+Communication/interaction between 2 classes.
+
+In this we represent class with just a small box [A] [B]
+
+Different terms in sequence diagram:
+
+1. LifeLine:
+
+It shows how long it any object exists.
+
+any object, class, component - when and all it exists
+
+ex:
+take 2 objects
+
+A and B
+
+it is repressed by:
+|
+|
+|
+|
+
+2. Activation bar:
+it is represented by box []
+
+It shows how long it any object will be active.
+
+
+
+The way we send messages in this diagram?
+
+There are 2 ways we send diagram:
+1. Asynchronous
+2. Synchronous
+
+1. Asynchronous:
+You keep sending messages, you dont wait for the response
+
+Its represented using closed arrow.
+
+2. Synchronous:
+When you send a message, you wait for its response. Until you get the response, you dont send another message
+
+Its represented using open arrow.
+
+
+There are 2 types of Messages:
+
+1. Create Message
+2. Destroy Message
+
+Another type of message:
+
+1. Lost Message
+2. Found Message
+
+1. Lost Message:
+
+Lost message is nothing but, imagine an object has to receive a message but its activation time has been done before it reached to this message. This is called lost message
+
+It is represented by circle and a dot inside (.)
+
+2. Found Message
+
+here we get a message from a source which we dont know where's its coming from, an unknown message is found.
+
+Imagine Object A got a random message and there's nobody to respond to
+
+How to draw sequence diagram?
+
+use-case:
+
+Imagine a user going to atm, putting their card, pin, amount and doing a withdrawal transaction. Now lets do the sequence diagram for this.
+
+always remember while creating a sequence diagram, we should have these 3 things
+
+1. use-case
+2. Identify Objects
+3. Draw sequence diagram
+
+
+Terms in sequence diagram:
+
+alt = denotes if-else
+option = if condition
+loop: for loops
