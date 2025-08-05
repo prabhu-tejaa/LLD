@@ -74,3 +74,22 @@ It is represented by circle and a dot inside (.)
 here we get a message from a source which we dont know where's its coming from, an unknown message is found.
 
 Imagine Object A got a random message and there's nobody to respond to
+
+How to draw sequence diagram?
+
+use-case:
+
+Imagine a user going to atm, putting their card, pin, amount and doing a withdrawal transaction. Now lets do the sequence diagram for this.
+
+always remember while creating a sequence diagram, we should have these 3 things
+
+1. use-case
+2. Identify Objects
+3. Draw sequence diagram
+
+
+Terms in sequence diagram:
+
+alt = denotes if-else
+option = if condition
+loop: for loops
