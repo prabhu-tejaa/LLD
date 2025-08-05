@@ -1,0 +1,3 @@
+S: Single responsibility principle (SRP)
+    - A class should do only one thing
+
