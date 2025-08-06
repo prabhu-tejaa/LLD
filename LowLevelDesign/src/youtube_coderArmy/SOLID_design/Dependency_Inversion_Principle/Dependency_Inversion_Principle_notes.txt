@@ -1,0 +1,15 @@
+Dependency Inversion Principle:
+
+High level module should not depend on low level model but rather both should depend on abstraction.
+
+ex:
+
+application is a high level module
+Sql is a low level module
+
+instead of having direct connection to low and high level modules, have an interface between them to communicate between each other.
+
+"High level module - interface - low level module"
+
+
+If open close principle is the target then Dependency Inversion Principle is the solution.
