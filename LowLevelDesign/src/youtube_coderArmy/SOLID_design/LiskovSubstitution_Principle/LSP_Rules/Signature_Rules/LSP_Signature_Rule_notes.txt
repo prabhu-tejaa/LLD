@@ -1,0 +1,70 @@
+
+Liskov substitution principle:
+
+We have 3 guidelines:
+
+1. Signature rule
+
+signature in programming means, the name of the method, arguments and return type.
+
+2. Property Rule
+
+3. Method rule
+
+
+1. Signature rule:
+
+Imagine you have class Animal, class Dog extends Animals then
+
+Broad: Animal (more general)
+Narrow: Dog (more specific)
+
+Signature rule:
+A child class must use the same method signature as the parent.
+It cannot change the parameter types.
+ 
+class Animal {
+    Animal getFriend();       // Parent method
+    void feed(string food);
+}
+
+class Dog extends Animal {
+    Dog getFriend();          // ✅ OK – narrower return type
+    void feed(String food);     // ✅ OK – same parameter type
+    // void feed(Object obj); // ❌ Not OK – changed parameter type
+}
+
+by default java follows this but still this a rule in LSP.
+
+we have a sub rule within the Signature rule
+
+1.1 Method argument rule (the above thing)
+1.2 Return type rule
+1.3 Exception rule
+
+1.2 Return type rule:
+
+So if you have a class Animal with a is-a relationship class Dog
+
+then this rule states that the class Dog then you return the return type of same  eg: Animal or subtype (narrow type) eg: Dog
+
+If a method in a parent class returns a certain type, then the overridden method in the child class should return the same type or a subtype.
+
+this is called Covariance.
+ Covariance means you can replace a return type with a more specific (derived) type in a subclass or generic.
+
+
+1.3 Exception rule
+
+In Exceptions we have something like this in general:
+
+Logic error
+    - IndexError: list index out of range
+    - memory exception
+    - Infinite loop or recursion
+runtime-error
+    - Using a variable that has no value (null or None)
+    - Running out of memory
+    - Accessing something that doesn’t exist (like an index that’s too big)
+
+This states, A subclass should not throw new or broader exceptions than the parent class method.

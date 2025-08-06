@@ -5,4 +5,3 @@ Liskov is the person who gave this principle.
 Subclasses should be substitutable for their base classes. (inheritance)
 
 You should be able to replace a parent class with any of its subclasses without breaking the program.
-
