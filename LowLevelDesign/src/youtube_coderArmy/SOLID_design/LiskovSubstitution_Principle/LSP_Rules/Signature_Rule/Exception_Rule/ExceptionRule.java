@@ -1,4 +1,4 @@
-package youtube_coderArmy.SOLID_design.LiskovSubstitution_Principle.LSP_Rules.Signature_Rules.Exception_Rule;
+package youtube_coderArmy.SOLID_design.LiskovSubstitution_Principle.LSP_Rules.Signature_Rule.Exception_Rule;
 
 
 // Exception Rule:

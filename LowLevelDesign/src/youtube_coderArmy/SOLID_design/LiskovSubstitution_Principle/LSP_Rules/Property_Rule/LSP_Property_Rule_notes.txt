@@ -1,0 +1,41 @@
+cc
+
+Invariant means any fact or rule for any class must be true it's called Invariant.
+
+When your parent class is having an Invariant, that means a rule. The child class should follow the rule or at-least strength the rule but not weaken the rule.
+
+If child class breaks the rule then we say it dosent not follow Invariant property
+
+we put rule by putting in comments.
+
+// rule: balance should never be negative (>=0)
+class Account {
+    balance;
+}
+
+class cheatAccount extends Account {
+    balance = -1;
+}
+
+this shows that the child class is not following the Class Invariant.
+
+2. History Constraint:
+
+A child class should not change the behavior or state rules (the "history") defined by the parent class.
+
+ex:
+we put rule by putting in comments.
+
+//withdrawal should always be allowed
+class Account {
+    balance;
+    withDraw();
+}
+
+class FixedDepositeAccount extends Account {
+    withDrawl(){
+        throw new Exception();
+    }
+}
+
+this breaks the History Constraint. We should follow the rule given then only its History Constraint.

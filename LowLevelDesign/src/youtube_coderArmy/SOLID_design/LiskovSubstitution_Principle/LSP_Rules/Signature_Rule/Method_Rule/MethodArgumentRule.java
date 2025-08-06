@@ -1,4 +1,4 @@
-package youtube_coderArmy.SOLID_design.LiskovSubstitution_Principle.LSP_Rules.Signature_Rules.Method_Rule;
+package youtube_coderArmy.SOLID_design.LiskovSubstitution_Principle.LSP_Rules.Signature_Rule.Method_Rule;
 // Method Argument Rule :
 // Subtype method arguments can be identical or wider than the supertype
 // Java enforces this by requiring the same method signature for overrides

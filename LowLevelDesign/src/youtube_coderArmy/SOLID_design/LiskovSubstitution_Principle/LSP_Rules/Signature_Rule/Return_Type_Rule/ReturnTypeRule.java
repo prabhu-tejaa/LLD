@@ -1,4 +1,4 @@
-package youtube_coderArmy.SOLID_design.LiskovSubstitution_Principle.LSP_Rules.Signature_Rules.Return_Type_Rule;
+package youtube_coderArmy.SOLID_design.LiskovSubstitution_Principle.LSP_Rules.Signature_Rule.Return_Type_Rule;
 
 // Return Type Rule :
 // Subtype overridden method return type should be either identical
