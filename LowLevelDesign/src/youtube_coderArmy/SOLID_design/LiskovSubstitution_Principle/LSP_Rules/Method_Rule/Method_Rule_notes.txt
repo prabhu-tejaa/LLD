@@ -1,0 +1,51 @@
+1. Per-Condition:
+
+What must be true before a method runs.
+
+class Parent {
+    // pre condition: num should always be >=0 && <=5
+    void m1(int num){
+    if(num < 0 || num > 5){
+        throw new error
+    }
+  }
+}
+
+class Child extends Parent {
+    // pre condition: num should always be >=0 && <=10
+    @Override
+    void m1(int num1){
+    if(num < 0 || num > 10){
+        throw new error
+    }
+  }
+}
+
+you keep the value within the constraint or weaken the constraint but not strength the constraint.
+
+in the above case if we have given child <=3 then its fails the pre-condition of the parent class.
+
+
+
+2. Post-Condition:
+
+What must be true after a method runs.
+
+class Car {
+    break(){
+    // post Condition: after applying break, car should slow down
+    speed = 20;
+    }
+}
+
+clas ElectricCar extends Car {
+    @Override
+     break(){
+    // post Condition: after applying break, car should slow down, charge should increase
+     //code
+     }
+
+     }
+}
+
+you keep the value within the constraint or strengthen the constraint but not weaken the constraint.
